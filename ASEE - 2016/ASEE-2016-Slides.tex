@@ -8,8 +8,6 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
-\usepackage[backend=biber,citestyle=authoryear,bibstyle=authoryear]{biblatex}
-\addbibresource{/Users/omojumiller/Dropbox/Research/Dissertation/dissertation.bib}
 
 
 %highlighting
@@ -25,16 +23,18 @@
 \usepackage{courier}
 
 
-%\usepackage[style=authoryear]{biblatex} %for citations
-%\bibliographystyle{aer}
-%\bibliography{./references/presentationreferences}
+
+
+\usepackage[style=authoryear]{biblatex} %for citations
+\bibliography{/Users/omojumiller/Dropbox/Research/Dissertation/dissertation}
 
 \DeclareMathOperator*{\E}{\mathbb{E}}               % Expectation symbol
 
 
 %%%%% PATHS %%%%%
 
-\graphicspath{{./plotit/}}
+\graphicspath{{figures/}}
+\usepackage{subfig} % For subfigures in floats
 %\addbibresource{refs.bib} %for citations
 
 %%%% CUSTOMIZATION OF THE TEMPLATE %%%%%
@@ -201,27 +201,20 @@
 \section{Research Methods}
 \begin{frame}{}
 
-\begin{table}[!htbp]
-  \begin{center}
-    \begin{tabular}{ ll } 
-    \multicolumn{2}{ c }%
-    {\textbf{Dimensions of Participant's CS Interest}} \\[5pt] 
-  
-    {\normalsize atcs} & Attitudes about CS competency.\\ 
-    atcsgender & Attitudes about the role of gender in CS\\
-    atct & Understanding of computational thinking\\
-    blg & Sense of belonging in the CS classroom.\\
-    clet & Attitudes about social implications and ethics.\\
-    cltrcmp & Understanding around cultural competency. \\
-    mtr & Access to CS Mentors. \\
-    prcs & Pre-Collegiate CS awareness. \\
-    \end{tabular}
-  
-  \end{center}
-\end{table}
+  \begin{figure}[!htbp]
+      \centering
+      \subfloat[]{%
+      \includegraphics[width=1\textwidth]{CSAttitudes}
+      }
+      
+  \end{figure}
 
 \end{frame}
 
+\section{Results}
+\begin{frame}{Belonging}
+
+\end{frame}
 
     
 
