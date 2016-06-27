@@ -174,7 +174,7 @@
     \end{center}
   \end{frame}
 
-\section{Design of an inclusive CS0 course at UC Berkeley}
+\section{CS10}
         \begin{frame}{}
         Three pathways into CS at UC Berkeley
             \begin{itemize}
@@ -185,7 +185,7 @@
         \end{frame}
 
         \begin{frame}{}
-        In her study of attrition in undergraduate CS at Berkeley, Lewis found that female students were disproportionately weeded out of the track, often starting at CS3 \cite{Lewis:EECS-2010-132}.
+        In her study of attrition in undergraduate CS at Berkeley, Lewis found that female students were disproportionately weeded out of the track, often starting at CS3 (Lewis 2010).
         \end{frame}
 
         \begin{frame}{}
@@ -221,7 +221,7 @@
 
 \begin{frame}{Effect of CS10 on CS61A Experience: Belonging}
   \begin{itemize}
-  \item students who had already taken CS10 seems to have a lower sense of belonging in CS61A, and in particular, female students, this effect seems magnified.
+  \item Students who had already taken CS10 seems to have a lower sense of belonging in CS61A, and in particular, female students, this effect seems magnified.
   \end{itemize}
 
   \begin{figure}[!htbp]
@@ -250,11 +250,49 @@
       \centering
       \includegraphics[width=1\textwidth]{BLG-ATCT}
       
-        
   \end{figure}
 
 \end{frame}
 
+\begin{frame}{What impact does CS10 have in attracting female students into the major?}
+
+  \begin{itemize}
+  \item 
+    \begin{itemize}
+      \item \textbf{blg\_1}
+      \item \textbf{atct\_5}
+    \end{itemize}
+  \item The relationship between these two variables seem to increase as girls move forward in the pipeline, as can be seen from figures \ref{corrHeatMapFemaleCS10CS61A} and \ref{corr_cs61a_female},  we are led to conclude that this relationship is truly a strong predictor of CS belonging.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+  \begin{figure}[!htbp]
+      \centering
+      \subfloat[Female]{%
+      \includegraphics[width=0.5\textwidth]{priorCS10_female_corr}
+      \label{corrHeatFemale}}
+      \subfloat[Male]{%
+      \includegraphics[width=0.5\textwidth]{priorCS10_male_corr}
+      \label{corrHeatMale}}
+  \caption{\textbf{Correlation matrix of CS61A students who had previously taken CS10}}
+  \label{corrHeatMapFemaleCS10CS61A}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \begin{figure}[!htbp]
+    \centering
+    \subfloat[CS61A]{%
+    \includegraphics[width=0.5\textwidth]{cs61a_female_corr}
+    \label{corr_cs61a_female}}
+%
+\caption {\textbf{Correlation matrix for female students in CS61A at UC Berkeley}
+\textit{There is a correlation between blg\_1: in this class, I feel I belong, and atct\_5: I know how to write computer programs, for female students in this class. }}
+\label{fig:corrFemale}
+\end{figure}
+\end{frame}
 
 
 \clearpage
