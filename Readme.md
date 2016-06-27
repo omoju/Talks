@@ -1,4 +1,4 @@
-# Invited Talks
+# Talks
 
 This repository holds various talks that I have given over time.
 
