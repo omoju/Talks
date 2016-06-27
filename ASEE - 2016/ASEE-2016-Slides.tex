@@ -9,7 +9,13 @@
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
 \usepackage[backend=biber,citestyle=authoryear,bibstyle=authoryear]{biblatex}
-\addbibresource{references.bib}
+\addbibresource{dissertation}
+%\bibliography{}
+
+%highlighting
+\usepackage{color}
+\newcommand{\hilight}[1]{\colorbox{yellow}{#1}}
+
 \usepackage{mathtools}
 \usepackage{xfrac}
 \usepackage[finnish, british]{babel}
@@ -149,22 +155,62 @@
 \begin{document}
 
 \section{Introduction}
-    \subsection{title}
+    \subsection{}
         \begin{frame}[plain]
-            \titlepage
+            \titlepage 
         \end{frame}
 
-    \subsection{}
+\section{Challenge}
+  \begin{frame}{}
+    \begin{center}
+      {\LARGE Equalizing Participation in Computer Science}
+      \begin{enumerate}
+                \item A lack of presence of CS in K-12 education.
+                \item \textcolor{red}{\textbf{The \hilight{under-production} of post-secondary degrees in CS}}. 
+                \item \textcolor{red}{\textbf{The underrepresentation of \hilight{women} in CS}}.
+                \item The underrepresentation of ethnic minorities in CS.
+                \item A lack of positive CS role models in the media. 
+                
+      \end{enumerate}
+    \end{center}
+  \end{frame}
+
+\section{Design of an inclusive CS0 course at UC Berkeley}
         \begin{frame}{}
+        Three pathways into CS at UC Berkeley
             \begin{itemize}
-                \item
+                \item \textcolor{red}{\textbf{CS3:\hilight{Introduction to Symbolic Programming}}}.
+                \item CS61A: Structure and Interpretation of Computer Programs.
+                \item CS61AS: Self paced version of CS61A
             \end{itemize}
         \end{frame}
+
+\section{Design of an inclusive CS0 course at UC Berkeley}
+        \begin{frame}{}
+        In her study of attrition in undergraduate CS at Berkeley, Lewis found that female students were disproportionately weeded out of the track, often starting at CS3 \cite{Lewis:EECS-2010-132}.
+        \end{frame}
+
+\section{Design of an inclusive CS0 course at UC Berkeley}
+        \begin{frame}{}
+        Three pathways into CS at UC Berkeley
+            \begin{itemize}
+                 \item \textcolor{red}{\textbf{CS10:\hilight{The Beauty and Joy of Computing}}}.
+                 \item CS61A: Structure and Interpretation of Computer Programs.
+                \item CS61AS: Self paced version of CS61A
+            \end{itemize}
+        \end{frame}
+
+
+
     
 
         
+%----------------------------------------------------------------------------------------
+%  REFERENCE LIST
+%----------------------------------------------------------------------------------------
+
 \printbibliography
-%\addcontentsline{toc}{section}{References}
+
 \clearpage
 \end{document}
               
